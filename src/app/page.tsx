@@ -19,10 +19,8 @@ export default function Home() {
         <ProblemSection />
         <GaslessSection />
         <ActivationSection />
-        <FeaturesGrid />
         <BuildersSection />
         <IntegrationsSection />
-        <BenefitsSection />
         <CtaSection />
       </main>
       <Footer />
