@@ -8,13 +8,13 @@ export default function CtaSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-accent/10 blur-[100px] animate-pulse-glow" />
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
           Build the wallet experience{" "}
           <span className="bg-gradient-to-r from-accent via-accent-light to-cyan bg-clip-text text-transparent">
             users actually want
           </span>
         </h2>
-        <p className="max-w-xl mx-auto text-lg text-muted mb-10 leading-relaxed">
+        <p className="max-w-xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
           Turn complex wallet and payment flows into seamless product
           experiences. Get early access and start building with Intent.
         </p>
@@ -36,7 +36,7 @@ export default function CtaSection() {
           </a>
           <a
             href="#builders"
-            className="inline-flex items-center justify-center rounded-xl border border-border px-8 py-4 text-base font-medium text-muted transition-all duration-300 hover:text-foreground hover:border-muted"
+            className="inline-flex items-center justify-center rounded-xl border border-gray-600 px-8 py-4 text-base font-medium text-gray-400 transition-all duration-300 hover:text-white hover:border-gray-400"
           >
             View integration
           </a>

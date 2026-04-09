@@ -87,7 +87,7 @@ export default function ActivationSection() {
 
           {/* Right — text */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold tracking-tight leading-[1.15] mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold tracking-tight text-foreground leading-[1.15] mb-6">
               Send to Any Wallet,
               <br />
               <span className="bg-linear-to-r from-cyan to-cyan-dark bg-clip-text text-transparent">

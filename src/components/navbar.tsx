@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { ThemeToggle } from "./theme-toggle";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -44,6 +45,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
           <a
             href="#cta"
             className="inline-flex items-center justify-center rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:bg-accent-light hover:shadow-[0_0_20px_rgba(124,91,245,0.3)]"
@@ -52,27 +54,30 @@ export default function Navbar() {
           </a>
         </div>
 
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden flex flex-col gap-1.5 p-2"
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`block w-5 h-0.5 bg-foreground transition-all duration-200 ${
-              mobileOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`block w-5 h-0.5 bg-foreground transition-all duration-200 ${
-              mobileOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-5 h-0.5 bg-foreground transition-all duration-200 ${
-              mobileOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
-        </button>
+        <div className="flex md:hidden items-center gap-2">
+          <ThemeToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="flex flex-col gap-1.5 p-2"
+            aria-label="Toggle menu"
+          >
+            <span
+              className={`block w-5 h-0.5 bg-foreground transition-all duration-200 ${
+                mobileOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            />
+            <span
+              className={`block w-5 h-0.5 bg-foreground transition-all duration-200 ${
+                mobileOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block w-5 h-0.5 bg-foreground transition-all duration-200 ${
+                mobileOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            />
+          </button>
+        </div>
       </div>
 
       {mobileOpen && (

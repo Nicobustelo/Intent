@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "../components/theme-provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Intent â€” Wallet Infrastructure Without the Friction",
+  title: "Intent — Wallet Infrastructure Without the Friction",
   description:
     "Intent helps teams abstract fees, reduce onboarding friction, and ship smoother wallet and payment experiences for real users.",
   openGraph: {
-    title: "Intent â€” Wallet Infrastructure Without the Friction",
+    title: "Intent — Wallet Infrastructure Without the Friction",
     description:
       "Intent helps teams abstract fees, reduce onboarding friction, and ship smoother wallet and payment experiences for real users.",
     type: "website",
@@ -33,11 +34,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-screen bg-background text-foreground font-sans">
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
 }
-

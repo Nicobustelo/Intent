@@ -124,13 +124,13 @@ export default function BuildersSection() {
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-cyan mb-4">
             For builders
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
             Built for teams that{" "}
             <span className="bg-gradient-to-r from-cyan to-accent bg-clip-text text-transparent">
               ship real products
             </span>
           </h2>
-          <p className="max-w-xl mx-auto text-muted text-lg">
+          <p className="max-w-xl mx-auto text-gray-400 text-lg">
             Integrate in minutes, not weeks. Intent gives you composable
             primitives that fit your architecture.
           </p>
@@ -138,14 +138,14 @@ export default function BuildersSection() {
 
         <div className="grid lg:grid-cols-2 gap-10 items-start">
           {/* Code panel */}
-          <div className="rounded-2xl border border-border bg-[#0c0c14] overflow-hidden shadow-2xl">
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-[#0e0e18]">
+          <div className="rounded-2xl border border-white/10 bg-[#0c0c14] overflow-hidden shadow-2xl">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-[#0e0e18]">
               <div className="flex gap-1.5">
                 <span className="w-3 h-3 rounded-full bg-red-500/70" />
                 <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
                 <span className="w-3 h-3 rounded-full bg-green-500/70" />
               </div>
-              <span className="ml-3 text-xs text-muted font-mono">
+              <span className="ml-3 text-xs text-gray-500 font-mono">
                 setup.ts
               </span>
             </div>
@@ -198,16 +198,16 @@ export default function BuildersSection() {
             ).map((item) => (
               <div
                 key={item.title}
-                className="group flex gap-4 rounded-xl border border-border/50 bg-surface/30 p-5 transition-all duration-300 hover:border-accent/20 hover:bg-surface/50"
+                className="group flex gap-4 rounded-xl border border-white/10 bg-white/5 p-5 transition-all duration-300 hover:border-accent/20 hover:bg-white/10"
               >
                 <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-accent/10 text-accent shrink-0 group-hover:bg-accent/20 transition-colors">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold text-foreground mb-1">
+                  <h3 className="text-base font-semibold text-white mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-muted leading-relaxed">
+                  <p className="text-sm text-gray-400 leading-relaxed">
                     {item.description}
                   </p>
                 </div>

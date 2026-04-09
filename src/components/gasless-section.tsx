@@ -1,21 +1,20 @@
 export default function GaslessSection() {
   return (
-    <section className="relative py-24 sm:py-32 bg-white border-t border-gray-100">
+    <section className="relative py-24 sm:py-32 bg-background border-t border-border">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left — text */}
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold tracking-tight text-gray-900 leading-[1.15] mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-[2.75rem] font-bold tracking-tight text-foreground leading-[1.15] mb-6">
               Transact in Stablecoins,
               <br />
               Skip the XLM
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            <p className="text-muted text-lg leading-relaxed mb-4">
               Most Stellar apps force users to acquire XLM before they can do
               anything — pay fees, set up trustlines, or simply send money.
               That&apos;s a dealbreaker for non-crypto users.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            <p className="text-muted text-lg leading-relaxed mb-8">
               Intent intercepts the transaction when a wallet has no XLM,
               converts just enough stablecoin to cover the network cost, and
               delivers the payment. One action from the user, zero XLM required.
@@ -23,7 +22,7 @@ export default function GaslessSection() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="#builders"
-                className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800"
+                className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:opacity-90"
               >
                 Explore SDK
                 <svg
@@ -42,7 +41,7 @@ export default function GaslessSection() {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-medium text-muted transition-colors hover:text-foreground hover:bg-surface"
               >
                 Read Docs
                 <svg
@@ -62,12 +61,11 @@ export default function GaslessSection() {
             </div>
           </div>
 
-          {/* Right — feature cards */}
           <div className="flex flex-col gap-4">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
+            <div className="rounded-2xl border border-border bg-background p-6">
+              <div className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center mb-4">
                 <svg
-                  className="w-5 h-5 text-gray-700"
+                  className="w-5 h-5 text-foreground"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -80,20 +78,20 @@ export default function GaslessSection() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+              <h3 className="text-lg font-semibold text-foreground mb-1">
                 Automatic token swap
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-muted text-sm leading-relaxed">
                 The agent converts a fraction of the user&apos;s stablecoin
                 balance to XLM to cover network fees — no manual exchange
                 needed.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-gray-200 bg-white p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
+            <div className="rounded-2xl border border-border bg-background p-6">
+              <div className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center mb-4">
                 <svg
-                  className="w-5 h-5 text-gray-700"
+                  className="w-5 h-5 text-foreground"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -106,19 +104,19 @@ export default function GaslessSection() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+              <h3 className="text-lg font-semibold text-foreground mb-1">
                 Fee sponsorship
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-muted text-sm leading-relaxed">
                 Gas costs are fully abstracted. Users only see the stablecoin
                 amount they intended to send — no surprise XLM line items.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-gray-200 bg-white p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
+            <div className="rounded-2xl border border-border bg-background p-6">
+              <div className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center mb-4">
                 <svg
-                  className="w-5 h-5 text-gray-700"
+                  className="w-5 h-5 text-foreground"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -131,10 +129,10 @@ export default function GaslessSection() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+              <h3 className="text-lg font-semibold text-foreground mb-1">
                 Usage-based pricing
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-muted text-sm leading-relaxed">
                 A slightly higher fee than a standard transaction covers
                 slippage, XLM provisioning, and execution. Friction becomes an
                 embedded, pay-per-use cost.

@@ -44,13 +44,13 @@ export default function IntegrationsSection() {
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-accent mb-4">
             Integrations
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
             Works with your{" "}
             <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
               existing stack
             </span>
           </h2>
-          <p className="max-w-xl mx-auto text-lg text-gray-600">
+          <p className="max-w-xl mx-auto text-lg text-muted">
             No migration needed. Intent plugs into the wallet providers, payment
             rails, and app architectures you already use.
           </p>
@@ -60,9 +60,9 @@ export default function IntegrationsSection() {
           {categories.map((cat) => (
             <div
               key={cat.label}
-              className="rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:shadow-lg hover:border-accent/20"
+              className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:shadow-lg hover:border-accent/20"
             >
-              <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-400 mb-5">
+              <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-muted-dark mb-5">
                 {cat.label}
               </p>
               <div className="flex gap-3">
@@ -73,7 +73,7 @@ export default function IntegrationsSection() {
                     >
                       {item.name[0]}
                     </div>
-                    <span className="text-[10px] text-gray-500 font-medium">
+                    <span className="text-[10px] text-muted font-medium">
                       {item.name}
                     </span>
                   </div>
@@ -83,7 +83,7 @@ export default function IntegrationsSection() {
           ))}
         </div>
 
-        <p className="text-center text-sm text-gray-400 mt-8">
+        <p className="text-center text-sm text-muted-dark mt-8">
           And many more — Intent is designed to be stack-agnostic.
         </p>
       </div>

@@ -19,7 +19,7 @@ export function CTASection() {
       >
         <div className="relative overflow-hidden rounded-3xl sm:rounded-[36px] lg:rounded-[48px] border border-border bg-surface shadow-sm min-h-[480px] sm:min-h-[540px] md:min-h-[600px] flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 duration-500">
           <Suspense fallback={<div className="absolute inset-0 bg-surface/20" />}>
-            <div className="absolute inset-0 z-0 pointer-events-none opacity-40 dark:opacity-30 mix-blend-screen">
+            <div className="absolute inset-0 z-0 pointer-events-none opacity-30 mix-blend-multiply dark:mix-blend-screen dark:opacity-40">
               <Dithering
                 colorBack="#00000000"
                 colorFront="#7c5bf5"
