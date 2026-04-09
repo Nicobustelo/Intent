@@ -45,3 +45,21 @@ next-env.d.ts
 .stellar/
 **/*.rs.bk
 ##Cargo.lock
+
+# Agente Orquestador (Node.js)
+server/node_modules/
+server/dist/
+server/.env
+server/npm-debug.log*
+
+# Rust
+contracts/**/target/
+Cargo.lock
+
+# Keys Secrets 
+*.secret
+*.key
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
