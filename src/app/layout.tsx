@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Intent — Wallet Infrastructure Without the Friction",
+  title: "Intent â€” Wallet Infrastructure Without the Friction",
   description:
     "Intent helps teams abstract fees, reduce onboarding friction, and ship smoother wallet and payment experiences for real users.",
   openGraph: {
-    title: "Intent — Wallet Infrastructure Without the Friction",
+    title: "Intent â€” Wallet Infrastructure Without the Friction",
     description:
       "Intent helps teams abstract fees, reduce onboarding friction, and ship smoother wallet and payment experiences for real users.",
     type: "website",
@@ -40,3 +40,4 @@ export default function RootLayout({
     </html>
   );
 }
+
