@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Transaction {
+  id            String   @id @default(uuid())
+  userAddress   String   // La wallet del usuario
+  destination   String   // A quién le mandó
+  amount        String   // Monto de la operación
+  asset         String   @default("XLM")
+  status        String   @default("PENDING") // PENDING, SUCCESS, FAILED
+  txHash        String?  @unique             // Para linkear al explorador de Stellar
+  feeSponsored  Float    @default(0.0001)    // Cuánto XLM pagó el Agente por el usuario
+  isNewAccount  Boolean  @default(false)     // Si el Agente tuvo que activar la cuenta
+  createdAt     DateTime @default(now())
+}
