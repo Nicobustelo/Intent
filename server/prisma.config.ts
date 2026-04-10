@@ -4,15 +4,13 @@
 import { defineConfig } from '@prisma/config';
 import * as dotenv from 'dotenv';
 
-// Carga las variables del .env explícitamente
+// Carga las variables del .env
 dotenv.config();
-
-
 
 export default defineConfig({
   schema: './prisma/schema.prisma',
   datasource: {
-    // Tu URL original, sin los corchetes y con el puerto 5432 que tenías
-    url: "postgresql://postgres:Delfinaluna45nicolas@db.gilrtggvmlzaztgrucjg.supabase.co:5432/postgres",
+    
+    url: process.env.DATABASE_URL,
   },
 });
